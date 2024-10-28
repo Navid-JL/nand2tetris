@@ -60,16 +60,16 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="1" loc="(220,140)" name="NAND Gate"/>
-    <comp lib="5" loc="(100,140)" name="Button">
+    <comp lib="1" loc="(200,130)" name="NAND Gate"/>
+    <comp lib="5" loc="(110,130)" name="Button">
       <a name="label" val="A"/>
     </comp>
-    <comp lib="5" loc="(320,140)" name="LED"/>
-    <wire from="(100,140)" to="(110,140)"/>
-    <wire from="(110,120)" to="(110,140)"/>
-    <wire from="(110,120)" to="(160,120)"/>
-    <wire from="(110,140)" to="(110,160)"/>
-    <wire from="(110,160)" to="(160,160)"/>
-    <wire from="(220,140)" to="(320,140)"/>
+    <comp lib="5" loc="(310,130)" name="LED"/>
+    <wire from="(110,130)" to="(120,130)"/>
+    <wire from="(120,110)" to="(120,130)"/>
+    <wire from="(120,110)" to="(140,110)"/>
+    <wire from="(120,130)" to="(120,150)"/>
+    <wire from="(120,150)" to="(140,150)"/>
+    <wire from="(200,130)" to="(310,130)"/>
   </circuit>
 </project>
