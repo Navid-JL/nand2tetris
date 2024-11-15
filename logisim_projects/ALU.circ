@@ -21,7 +21,7 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <main name="main"/>
+  <main name="ALU"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -54,9 +54,9 @@
     <tool lib="4" name="D Flip-Flop"/>
     <tool lib="4" name="Register"/>
   </toolbar>
-  <circuit name="main">
+  <circuit name="ALU">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="main"/>
+    <a name="circuit" val="ALU"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(110,130)" name="Constant">
@@ -119,6 +119,12 @@
       <a name="facing" val="north"/>
       <a name="label" val="F"/>
     </comp>
+    <comp lib="0" loc="(430,100)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="NG"/>
+      <a name="output" val="true"/>
+    </comp>
     <comp lib="0" loc="(440,70)" name="Splitter">
       <a name="appear" val="right"/>
       <a name="bit0" val="none"/>
@@ -139,6 +145,12 @@
       <a name="bit9" val="none"/>
       <a name="facing" val="south"/>
       <a name="incoming" val="16"/>
+    </comp>
+    <comp lib="0" loc="(480,140)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="ZR"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(660,250)" name="Splitter">
       <a name="appear" val="right"/>
@@ -193,18 +205,10 @@
     <comp lib="3" loc="(370,230)" name="Adder">
       <a name="width" val="16"/>
     </comp>
-    <comp lib="5" loc="(430,100)" name="LED">
-      <a name="facing" val="north"/>
-      <a name="label" val="NG"/>
-    </comp>
-    <comp lib="5" loc="(480,120)" name="LED">
-      <a name="facing" val="south"/>
-      <a name="label" val="ZR"/>
-    </comp>
-    <comp lib="8" loc="(475,96)" name="Text">
+    <comp lib="8" loc="(475,95)" name="Text">
       <a name="text" val="Flags"/>
     </comp>
-    <comp lib="8" loc="(72,32)" name="Text">
+    <comp lib="8" loc="(70,30)" name="Text">
       <a name="text" val="Hack ALU"/>
     </comp>
     <wire from="(110,130)" to="(130,130)"/>
@@ -267,7 +271,7 @@
     <wire from="(440,70)" to="(450,70)"/>
     <wire from="(450,70)" to="(450,80)"/>
     <wire from="(450,80)" to="(660,80)"/>
-    <wire from="(480,120)" to="(480,170)"/>
+    <wire from="(480,140)" to="(480,170)"/>
     <wire from="(480,170)" to="(490,170)"/>
     <wire from="(570,100)" to="(640,100)"/>
     <wire from="(570,110)" to="(640,110)"/>

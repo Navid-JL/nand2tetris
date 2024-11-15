@@ -6,6 +6,9 @@
     <tool name="Pin">
       <a name="appearance" val="classic"/>
     </tool>
+    <tool name="Clock">
+      <a name="phaseOffset" val="4"/>
+    </tool>
   </lib>
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2"/>
@@ -18,7 +21,7 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <main name="main"/>
+  <main name="PC"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -51,9 +54,9 @@
     <tool lib="4" name="D Flip-Flop"/>
     <tool lib="4" name="Register"/>
   </toolbar>
-  <circuit name="main">
+  <circuit name="PC">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="main"/>
+    <a name="circuit" val="PC"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(120,100)" name="Pin">
@@ -100,12 +103,14 @@
     </comp>
     <comp lib="0" loc="(90,20)" name="Pin">
       <a name="appearance" val="classic"/>
+      <a name="label" val="outp"/>
       <a name="output" val="true"/>
       <a name="radix" val="10unsigned"/>
       <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(90,60)" name="Pin">
       <a name="appearance" val="classic"/>
+      <a name="label" val="inpt"/>
       <a name="radix" val="16"/>
       <a name="width" val="16"/>
     </comp>
